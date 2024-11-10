@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f0f0f0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: blue;
+}
+
+.container{
+    width: 50%;
+    height: 500px;
+    background-color: rgb(73, 73, 73);
+    border-radius: 10px;
+    margin: 50px auto;
+}
+
+header h1{
+    color: white;
+    font-size: 24px;
+    padding: 15px 0 10px 20px;
+    letter-spacing: 4px;
+    border-bottom: 2px solid white;
+}
+
+.messages{
+    width: 90%;
+    height: 300px;
+    background-color: white;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+.mess{
+    list-style: none;
+    padding: 8px;
+    border-bottom: 1px dotted silver;
+}
+
+.formulaire{
+    text-align: center;
+}
+
+input[type=text]{
+    width: 44%;
+    height: 27px;
+    border-radius: 5px;
+    background-color: rgb(209, 206, 206);
+    color: white;
+    font-size: 24px;
+    padding: 2px;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus{
+    background-color: black;
+    width:50%;
+}
+
+input[type=submit]{
+    margin-top: 20px;
+    width: 90%;
+    height: 35px;
+}
+
+inputsubmit{
+    background-color: aqua;
+}
+
+.raz {
+    width: 30px;
+    height: 20px;
+}
