@@ -16,7 +16,7 @@
         </tr>
     <?php
     include "connect.php";
-    $req = "SELECT * FROM users";
+    $req = "SELECT * FROM user";
     $res = mysqli_query($id, $req);
     while($ligne = mysqli_fetch_assoc($res)){
         echo "<tr>

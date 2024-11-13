@@ -6,7 +6,7 @@ if(isset($_POST["bout"])){
     $prenom = $_POST["prenom"];
     $mail = $_POST["mail"];
     $niveau = $_POST["niveau"];
-    $req = "update users set nom='$nom',
+    $req = "update user  set nom='$nom',
                             prenom='$prenom',
                             mail='$mail',
                             niveau='$niveau'
@@ -18,7 +18,7 @@ if(isset($_POST["bout"])){
 
 
 $idu = $_GET['idu'];
-$query = "SELECT * FROM users WHERE idu = '$idu'";
+$query = "SELECT * FROM user WHERE idu = '$idu'";
 $result = mysqli_query($id, $query);
 $ligne = mysqli_fetch_assoc($result);
 ?>
