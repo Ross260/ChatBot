@@ -13,7 +13,6 @@ if (isset($_POST["bout"])) {
     mysqli_query($id, $req);
 
 }
-
 ?>
 
 <!DOCTYPE html>

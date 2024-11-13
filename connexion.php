@@ -1,7 +1,7 @@
 <?php 
 
 //connexion à la base de donnée
-
+session_start();
 if (isset($_POST["connect"])) {
     $id = mysqli_connect("localhost","root","","chatbotv1");
     
@@ -12,7 +12,7 @@ if (isset($_POST["connect"])) {
     $res = mysqli_query($id, $req);
     if (mysqli_num_rows($res) > 0) {
         $ligne = mysqli_fetch_assoc($res);
-        session_start();
+        
         $_SESSION["nom"] = $ligne["nom_user"];
         $_SESSION["prenom"] = $ligne["prenom_user"];
         $_SESSION["niveau"] = $ligne["niveau"];
