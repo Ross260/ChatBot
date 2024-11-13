@@ -31,7 +31,7 @@ header h1{
     background-color: white;
     margin: 20px auto;
     border-radius: 10px;
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 .mess{
@@ -64,13 +64,4 @@ input[type=submit]{
     margin-top: 20px;
     width: 90%;
     height: 35px;
-}
-
-inputsubmit{
-    background-color: aqua;
-}
-
-.raz {
-    width: 30px;
-    height: 20px;
 }
