@@ -32,7 +32,7 @@ if(isset($_POST["bout"])){
         <div class="messages">
             <ul>
                 <?php
-                $req = "select * from messages order by date desc";
+                $req = "select * from message order by date desc";
                 $result = mysqli_query($id, $req);
                 while($ligne = mysqli_fetch_assoc($result)){
                     echo "<li class='mess'>".$ligne["date"]." -- ".

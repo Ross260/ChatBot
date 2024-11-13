@@ -3,8 +3,8 @@ session_start();
 if(isset($_POST['bout'])){
     $mail = $_POST['mail'];
     $mdp = $_POST['mdp'];
-    $id = mysqli_connect("localhost","root","","chat");
-    $req = "select * from users where mail='$mail' and mdp='$mdp'";
+    $id = mysqli_connect("localhost","root","","chatbotv1");
+    $req = "select * from user where mail='$mail' and mdp='$mdp'";
     $res = mysqli_query($id,$req);
     if(mysqli_num_rows($res) == 1){
         $ligne = mysqli_fetch_assoc($res);

@@ -6,10 +6,10 @@ if(isset($_POST['bout'])){
     $mail = $_POST['mail'];
     $mdp = $_POST['mdp'];
     include "connect.php";
-    $req = "INSERT INTO users (nom,prenom,mail,mdp)
+    $req = "INSERT INTO user (nom,prenom,mail,mdp)
                 VALUES ('$nom','$prenom','$mail','$mdp')";
     $res = mysqli_query($id,$req);
-    echo "<h3>Inscruption réussie, connectez vous....";
+    echo "<h3>Inscription réussie, connectez vous....";
     header("refresh:3;url=connexion.php");
     //header("location:connexion.php");
 }
