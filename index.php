@@ -1,5 +1,5 @@
 <?php 
-
+session_start();
 //connexion à la base de donnée
 $id = mysqli_connect("localhost","root","","chatbotv1");
 
@@ -25,6 +25,14 @@ if (isset($_POST["bout"])) {
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    Bonjour <?= $_SESSION["prenom"] ?>, <?php 
+    
+    if ($_SESSION["prenom"] == "new") {
+        echo "tu es admin";
+    }else {
+        echo "yo!";
+    }
+    ?>
     <div class="container">
         <header>
             <h1>Chattez'en direct! Chatbox ---- <a href="raz.php">RAZ</a></h1>

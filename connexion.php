@@ -11,6 +11,13 @@ if (isset($_POST["connect"])) {
     $req = "select * from user where email = '$email' and password_user='$password' ";
     $res = mysqli_query($id, $req);
     if (mysqli_num_rows($res) > 0) {
+        $ligne = mysqli_fetch_assoc($res);
+        session_start();
+        $_SESSION["nom"] = $ligne["nom_user"];
+        $_SESSION["prenom"] = $ligne["prenom_user"];
+        $_SESSION["niveau"] = $ligne["niveau"];
+
+        $_SESSION["mail"] = $email;
         echo "<p style='color:green'>connexion reussi</p>";
         header("refresh:3;url=index.php");
         
