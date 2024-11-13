@@ -9,7 +9,7 @@ if(isset($_POST["bout"])){
     $pseudo = $_POST["pseudo"];
     $message = $_POST["message"];
 
-    $req = "insert into messages (pseudo,message,date)
+    $req = "insert into message (pseudo,message,date)
             values ('$pseudo', '$message', now())";
     //execution de la requete
     mysqli_query($id,$req);
