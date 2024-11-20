@@ -24,11 +24,12 @@ if(isset($_POST['bout'])){
 <body>
     <h1>Formulaire d'inscription</h1><hr>
 
-    <form action="" method="post">
+    <form action="" method="post" enctype="multipart/form-data">
         <input type="text" name="nom" placeholder="Nom :" required> <br><br>
         <input type="text" name="prenom" placeholder="Prénom :" required> <br><br>
         <input type="email" name="mail" placeholder="Mail :" required> <br><br>
         <input type="password" name="mdp" placeholder="Mot de passe :" required> <br><br>
+        <input type="file" name="avatar"> <br><br>
 
         <input type="submit" value="ENREGISTRER" name="bout">
 
