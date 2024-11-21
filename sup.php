@@ -1,7 +1,7 @@
 <?php
+$idu = $_GET["idu"];
 include "connect.php";
-$idu = $_GET['idu'];
-$query = "delete FROM user WHERE idu = '$idu'";
-mysqli_query($id, $query);
+$req = "delete FROM users WHERE idu = '$idu'";
+$result = mysqli_query($id, $req);
 header("location:listeUsers.php");
 ?>
